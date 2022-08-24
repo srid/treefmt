@@ -30,10 +30,10 @@
           # to have the various tools on the PATH.
           #
           # It also assumes that the project root has a flake.nix (override this by setting `projectRootFile`).
-          formatter = packages.treefmt.withConfig {
-            settings = nixpkgs.lib.importTOML ./treefmt.toml;
-            projectRootFile = "flake.nix";
-          };
+          # formatter = packages.treefmt.withConfig {
+          #  settings = nixpkgs.lib.importTOML ./treefmt.toml;
+          #   projectRootFile = "flake.nix";
+          # };
         };
     };
 }
